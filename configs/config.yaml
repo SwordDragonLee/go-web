@@ -1,0 +1,26 @@
+server:
+  port: 8081 # 修改为 8081，避免端口冲突
+  mode: debug # debug, release, test
+  read_timeout: 30s
+  write_timeout: 30s
+
+database:
+  # 方式1: 使用DSN连接字符串（推荐，如果提供则优先使用）
+  # dsn: "root:ljl970628@tcp(localhost:3306)/go_web?charset=utf8mb4&parseTime=True&loc=Local"
+
+  # 方式2: 使用各个字段分别配置（如果未提供dsn，则使用此方式）
+  host: localhost
+  port: 3306
+  user: root
+  password: ljl970628
+  database: dragon
+
+  # 连接池配置
+  max_idle_conns: 10
+  max_open_conns: 100
+  conn_max_lifetime: 1h
+
+jwt:
+  secret: your-secret-key-change-in-production-please-use-a-strong-random-string
+  expire_time: 168h # 7天
+
