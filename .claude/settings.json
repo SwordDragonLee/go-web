@@ -2,7 +2,7 @@
   "skills": [
     {
       "name": "create-crud",
-      "path": ".claude/skills/create-crud.md"
+      "path": ".claude/skills/create-crud/skill.md"
     }
   ]
 }
