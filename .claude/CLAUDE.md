@@ -145,6 +145,10 @@ dto.Error(400, "错误信息")            // {"code": 400, "message": "错误信
 
 项目提供以下自定义开发辅助命令：
 
+- `/create-crud`: 快速创建完整的三层架构 CRUD 功能（推荐使用）
+  - 用法：`/create-crud 模块名`（如：`/create-crud product` 或 `/create-crud 商品`）
+  - 自动生成：Model、DTO、Repository、Service、Handler、Router
+  - 包含完整的增删改查接口
 - `/create-api`: 创建新的 API 接口，遵循三层架构
 - `/full-crud`: 生成完整的 CRUD 功能（模型、DTO、Repository、Service、Handler、路由）
 - `/add-config`: 在系统设置页面新增配置项
